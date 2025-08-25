@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+:root{
+    --top-banner-color: #044680;
+    --footer-color: rgba(152, 170, 252, 0.2);
+    --sub-footer-color: #577592;
+    
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+
+}
+h3{
+    font-size: 1rem;
+}
+p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+/* utility classes */
+
+.containor{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.primary-button{
+    background-color: white;
+    box-shadow: 0 0 2px var(--top-banner-color);
+    color: black;
+    font-weight: 700;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.primary-button:hover{
+    background-color: var(--top-banner-color);
+    color: white;
+}
+
+/* top banner */
+
+.top-banner{
+    background-color: var(--top-banner-color);
+    width: 100%;
+    height: 60px;
+}
+.banner-text{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+
+/* nav section */
+
+.nav-section{
+    justify-content:space-between;
+    margin-top: 30px;
+    position: relative;
+    
+}
+
+.company-logo img{
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--top-banner-color);
+    border-radius: 50px;
+    
+    
+}
+.a,.b,.c{
+    font-size: 30px;
+}
+.a{
+    color: red;
+}
+.b{
+    color: green;
+}
+.nav-button{
+    flex-basis: 900px;
+}
+.nav-button ul{
+    justify-content: end;
+    gap: 20px;
+    list-style: none;
+}
+.hover-links{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+
+}
+.hover-links:hover{
+    color: var(--top-banner-color);
+    transition: 0.2s ease-in-out;
+}
+.button-links{
+    text-decoration: none;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+/* dropdown ke liye alag se */
+
+/* header section */
+
+.header-section{
+    background-color: var(--top-banner-color);
+    margin-top: 20px;
+    
+}
+.header-section-containor{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.header-section-containor h1{
+    padding-left: 34%;
+    flex-wrap: wrap;
+    font-size: 3.5rem;
+    color: white;
+    align-items: center;
+}
+
+/* feedback form section */
+
+
+.feedback-form{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.main-feedback-form{
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(113, 123, 250, 0.5);
+    width: 100%;
+    max-width: 500px;
+}
+.feedback-form h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--top-banner-color);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition:  0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--top-banner-color);
+}
+
+.feedback-button{
+    width: 100%;
+    border: none;
+}
+
+/* footer section */
+
+.footer-section{
+    width: 100%;
+    height: 450px;
+    background-color: var(--footer-color);
+}
+/* sub footer section */
+
+.subfooter{
+    
+    background-color: var(--sub-footer-color);
+}
+.subfooter-containor{
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top:20px;
+}
+
+.subfooter-containor p{
+    color: white;
+}
+
+
+/* submited box */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.ok{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.message-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.message-box.success {
+    border-left: 10px solid green;
+}
+.message-box.error {
+    border-left: 10px solid red;
+}
