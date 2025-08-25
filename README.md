@@ -8,7 +8,7 @@ Based on Client Requirements
 
 The Fees Management Portal is a complete web-based solution for institutes.
 
-It manages student admission, fee collection, installment tracking, and receipt generation.
+It manages student admission, fee collection, installment , and receipt generation.
 
 The portal is designed with two types of logins: Admin & Student.
 
@@ -18,11 +18,11 @@ It also includes extra modules like Gallery, Feedback, and Contact Form for bett
 
 To digitize the process of student admission and fee collection.
 
-To provide installment-wise payment tracking.
+To provide installment-wise payment receipt.
 
 To allow students to download their receipts anytime.
 
-To enable admins to manage admissions, track installments, and issue receipts.
+To enable admins to manage admissions, installments, and issue receipts.
 
 To provide easy communication through Feedback & Contact forms.
 
